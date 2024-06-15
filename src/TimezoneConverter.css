@@ -1,0 +1,270 @@
+/* TimezoneConverter.css */
+
+/* Update background and text colors */
+
+.TimezoneConverter {
+  text-align: center;
+  background-color: #ffffff;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.converter-heading {
+  margin-bottom: 20px;
+  color: #007bff; /* Blue heading color */
+  font-size: 24px; /* Larger font size */
+}
+
+.converter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Update timezone list styles */
+.timezone-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* White background for timezone list */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Add some padding */
+}
+
+.timezone-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timezone-name {
+  margin-right: 10px;
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Update button styles */
+.add-timezone-btn,
+.remove-btn,
+.action-buttons button {
+  padding: 10px 20px; /* Add padding to buttons */
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.add-timezone-btn:hover,
+.remove-btn:hover,
+.action-buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Update slider styles */
+.TimezoneList input[type='range'] {
+  width: 100%; /* Fill available width */
+  height: 20px; /* Adjust height as needed */
+  margin-bottom: 10px;
+  background-color: #007bff; /* Blue slider track */
+}
+
+.TimezoneList input[type='range']::-webkit-slider-thumb {
+  background-color: #fff; /* White slider handle */
+  border: 2px solid #007bff; /* Blue border for handle */
+  border-radius: 50%; /* Circular handle */
+  height: 20px; /* Match height of track */
+  width: 20px; /* Match width of track */
+  cursor: pointer;
+}
+
+.TimezoneList input[type='range']::-moz-range-thumb {
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Update date picker styles */
+.date-picker-container .react-datepicker-wrapper,
+.date-picker-container .react-datepicker__input-container {
+  width: 100%; /* Fill available width */
+}
+
+.date-picker-container .react-datepicker {
+  font-family: Arial, sans-serif; /* Use same font as rest of the app */
+}
+
+.date-picker-container .react-datepicker__header {
+  background-color: #007bff; /* Blue header background */
+}
+
+.date-picker-container .react-datepicker__day-names {
+  color: #007bff; /* Blue day names */
+}
+
+.date-picker-container .react-datepicker__day {
+  color: #333; /* Dark text color for days */
+}
+
+.date-picker-container .react-datepicker__day--selected {
+  background-color: #007bff; /* Blue selected day background */
+  color: #fff; /* White text color for selected day */
+}
+
+.date-picker-container .react-datepicker__day--keyboard-selected {
+  background-color: #0056b3; /* Darker blue for keyboard selected day */
+}
+
+.date-picker-container .react-datepicker__month-container {
+  border: 2px solid #007bff; /* Blue border around date picker */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.date-picker-container .react-datepicker__month {
+  margin: 10px; /* Add some margin */
+}
+
+.date-picker-container .react-datepicker__month-text {
+  color: #007bff; /* Blue month text */
+}
+
+.date-picker-container .react-datepicker__time-container {
+  width: 100%; /* Fill available width */
+}
+
+.date-picker-container .react-datepicker__time {
+  background-color: #007bff; /* Blue time picker background */
+}
+
+.date-picker-container .react-datepicker__time-list {
+  color: #fff; /* White time text */
+}
+
+.date-picker-container .react-datepicker__time-list-item {
+  padding: 10px; /* Add padding to time items */
+}
+
+.date-picker-container .react-datepicker__time-list-item:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Update background and text colors for dark mode */
+.dark-mode .TimezoneConverter {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+.dark-mode .converter-heading {
+  color: #007bff; /* Blue heading color */
+}
+
+.dark-mode .timezone-list {
+  background-color: #333; /* Dark background for timezone list */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Shadow effect for dark mode */
+}
+
+.dark-mode .timezone-item {
+  background-color: #444; /* Dark background for timezone items */
+}
+
+.dark-mode .timezone-name {
+  color: #fff; /* Light text color for timezone names */
+}
+
+.dark-mode .rc-slider-rail {
+  background-color: #888; /* Darker rail color for sliders */
+}
+
+.dark-mode .action-buttons button {
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+}
+
+.dark-mode .action-buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styles for dark mode */
+.dark-mode .date-picker-container .react-datepicker-wrapper,
+.dark-mode .date-picker-container .react-datepicker {
+  background-color: #333; /* Dark background for date picker */
+  color: #fff; /* Light text color for date picker */
+  border: 2px solid #007bff; /* Blue border around date picker */
+}
+
+.dark-mode .date-picker-container .react-datepicker__header,
+.dark-mode .date-picker-container .react-datepicker__day-names,
+.dark-mode .date-picker-container .react-datepicker__day,
+.dark-mode .date-picker-container .react-datepicker__month-text {
+  color: #007bff; /* Blue color for date picker elements */
+}
+
+.dark-mode .date-picker-container .react-datepicker__day--selected {
+  background-color: #007bff; /* Blue selected day background */
+  color: #fff; /* White text color for selected day */
+}
+
+.dark-mode .date-picker-container .react-datepicker__day--keyboard-selected {
+  background-color: #0056b3; /* Darker blue for keyboard selected day */
+}
+
+.dark-mode .date-picker-container .react-datepicker__time,
+.dark-mode .date-picker-container .react-datepicker__time-list,
+.dark-mode .date-picker-container .react-datepicker__time-list-item {
+  background-color: #333; /* Dark background for time picker */
+  color: #961414; /* Light text color for time picker */
+}
+
+.dark-mode .date-picker-container .react-datepicker__time-list-item:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* TimezoneConverter.css */
+
+/* Update slider styles */
+.TimezoneList input[type='range'] {
+  -webkit-appearance: none; /* Remove default appearance */
+  width: 100%; /* Fill available width */
+  height: 10px; /* Set height */
+  background: linear-gradient(to right, #0e65c1, #ff0000); /* Gradient background */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Webkit (Chrome, Safari, etc.) */
+.TimezoneList input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default appearance */
+  width: 20px; /* Set width of the thumb */
+  height: 20px; /* Set height of the thumb */
+  background-color: #fff; /* Color of the thumb */
+  border-radius: 50%; /* Circular shape */
+  cursor: pointer; /* Show pointer cursor */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow to the thumb */
+}
+
+/* Firefox */
+.TimezoneList input[type='range']::-moz-range-thumb {
+  width: 20px; /* Set width of the thumb */
+  height: 20px; /* Set height of the thumb */
+  background-color: #fff; /* Color of the thumb */
+  border-radius: 50%; /* Circular shape */
+  cursor: pointer; /* Show pointer cursor */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow to the thumb */
+}
